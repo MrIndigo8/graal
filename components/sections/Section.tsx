@@ -23,7 +23,7 @@ export function Section({
       )}
     >
       {eyebrow ? (
-        <p className="mb-3 text-xs font-semibold uppercase tracking-[0.2em] text-[var(--color-crimson-400)]">
+        <p className="mb-3 text-xs font-semibold uppercase tracking-[0.2em] text-[var(--color-gold-700)]">
           {eyebrow}
         </p>
       ) : null}

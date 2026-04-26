@@ -22,7 +22,7 @@ export default async function Home() {
 
   return (
     <main
-      className="min-h-screen bg-[var(--color-bg-primary)]"
+      className="lux-main min-h-screen bg-[var(--color-bg-primary)]"
       style={buildThemeStyle(config)}
     >
       <Navbar brandName={config.brand.name} ctaLabel={config.buttons.finalCtaLabel} />

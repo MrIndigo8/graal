@@ -1,23 +1,36 @@
 @import "tailwindcss";
 
 :root {
-  --color-bg-primary: #fafaf8;
-  --color-bg-secondary: #f5f3ee;
-  --color-bg-tertiary: #ede9e0;
-  --color-bg-dark: #1a0a0a;
-  --color-crimson-50: #fdf2f2;
-  --color-crimson-400: #c0392b;
-  --color-crimson-600: #922b21;
-  --color-crimson-900: #4a0e0e;
-  --color-gold-100: #fdf5dc;
-  --color-gold-300: #e8c870;
-  --color-gold-500: #c9a84c;
-  --color-gold-700: #9a7a2e;
-  --color-text-primary: #1c1410;
-  --color-text-secondary: #6b5e52;
-  --color-text-muted: #9e9085;
-  --color-border: #e2dad0;
-  --color-border-light: #ede9e0;
+  --color-bg-primary: #fbf8f1;
+  --color-bg-secondary: #f3ecdf;
+  --color-bg-tertiary: #ece2d2;
+  --color-bg-dark: #170f0d;
+  --color-crimson-50: #fcf0ef;
+  --color-crimson-400: #b53a2f;
+  --color-crimson-600: #85241d;
+  --color-crimson-900: #3f100d;
+  --color-gold-100: #f8eed0;
+  --color-gold-300: #ddc17d;
+  --color-gold-500: #b89343;
+  --color-gold-700: #7f611f;
+  --color-text-primary: #20140f;
+  --color-text-secondary: #6f5a4a;
+  --color-text-muted: #a18b7b;
+  --color-border: #decfb8;
+  --color-border-light: #e9ddcc;
+  --shadow-soft: 0 16px 44px rgba(36, 17, 11, 0.08);
+  --shadow-luxe: 0 32px 96px rgba(30, 12, 10, 0.16);
+  --gradient-paper: linear-gradient(
+    165deg,
+    rgba(255, 255, 255, 0.95),
+    rgba(246, 237, 219, 0.88)
+  );
+  --gradient-hero-glow: radial-gradient(
+      circle at 78% 18%,
+      rgba(184, 147, 67, 0.2),
+      transparent 42%
+    ),
+    radial-gradient(circle at 16% 72%, rgba(181, 58, 47, 0.1), transparent 34%);
   --container-max: 1152px;
   --page-padding-x: clamp(1rem, 4vw, 2.5rem);
   --section-padding-y: clamp(4rem, 8vw, 6rem);
@@ -41,9 +54,16 @@
 }
 
 body {
-  background: var(--background);
+  background: radial-gradient(
+      circle at 50% 0%,
+      rgba(184, 147, 67, 0.08),
+      transparent 34%
+    ),
+    var(--background);
   color: var(--foreground);
   font-family: var(--font-inter), system-ui, sans-serif;
+  min-height: 100vh;
+  text-rendering: optimizeLegibility;
 }
 
 html {
@@ -73,4 +93,25 @@ canvas {
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
   }
+}
+
+.lux-main {
+  position: relative;
+}
+
+.lux-main::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: -1;
+  background: linear-gradient(
+      to right,
+      rgba(127, 97, 31, 0.06) 1px,
+      transparent 1px
+    ),
+    linear-gradient(to bottom, rgba(127, 97, 31, 0.04) 1px, transparent 1px);
+  background-size: 120px 120px;
+  mask-image: radial-gradient(circle at 50% 36%, black 36%, transparent 76%);
+  opacity: 0.4;
 }

@@ -10,9 +10,13 @@ type SubmitState = "idle" | "loading" | "success" | "error";
 export function LeadForm({
   submitLabel = "Получить смету за 48 часов",
   successMessage = "Заявка принята. Смета будет готова за 48 часов.",
+  presetNiche = "it",
+  id = "lead-form",
 }: {
   submitLabel?: string;
   successMessage?: string;
+  presetNiche?: "it" | "igaming" | "infobusiness" | "ai" | "other";
+  id?: string;
 }) {
   const [state, setState] = useState<SubmitState>("idle");
   const [message, setMessage] = useState("");
@@ -77,7 +81,7 @@ export function LeadForm({
 
   return (
     <form
-      id="lead-form"
+      id={id}
       onSubmit={handleSubmit}
       className="grid gap-4 rounded-[var(--radius-card)] border border-[var(--color-border)] bg-white p-[var(--card-padding)] shadow-sm"
     >
@@ -95,7 +99,7 @@ export function LeadForm({
       </div>
 
       <div className="grid gap-4 md:grid-cols-2">
-        <Select label="Ниша" name="niche" defaultValue="it">
+        <Select label="Ниша" name="niche" defaultValue={presetNiche}>
           <option value="it">IT / SaaS</option>
           <option value="igaming">iGaming / Fintech</option>
           <option value="infobusiness">Инфобизнес</option>

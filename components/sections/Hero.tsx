@@ -39,7 +39,7 @@ export function Hero({
         </div>
       </div>
 
-      <Card className="relative min-h-[520px] overflow-hidden bg-[linear-gradient(135deg,#fff,rgba(253,245,220,0.55))] shadow-[0_24px_80px_rgba(74,14,14,0.08)]">
+      <Card className="relative min-h-[520px] overflow-hidden bg-[var(--gradient-hero-glow),var(--gradient-paper)] shadow-[var(--shadow-luxe)]">
         <GraalArtifact />
         <div className="relative z-10">
           <Badge variant="gold">Revenue system</Badge>

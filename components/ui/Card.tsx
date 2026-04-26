@@ -3,10 +3,11 @@ import { cn } from "@/lib/cn";
 type CardVariant = "base" | "accent" | "metric";
 
 const variantClasses: Record<CardVariant, string> = {
-  base: "border-[var(--color-border)] bg-white",
+  base: "border-[var(--color-border)] bg-[var(--gradient-paper)] shadow-[var(--shadow-soft)]",
   accent:
-    "border-[var(--color-border)] border-l-[var(--color-crimson-400)] bg-white hover:border-l-[var(--color-gold-500)] hover:shadow-lg",
-  metric: "border-transparent bg-[var(--color-bg-secondary)]",
+    "border-[var(--color-border)] border-l-[var(--color-crimson-400)] bg-[var(--gradient-paper)] hover:border-l-[var(--color-gold-500)] hover:shadow-[var(--shadow-soft)]",
+  metric:
+    "border border-[rgba(184,147,67,0.25)] bg-[linear-gradient(170deg,#fff,rgba(248,238,208,0.58))]",
 };
 
 export function Card({

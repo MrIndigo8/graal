@@ -3,9 +3,12 @@ import { cn } from "@/lib/cn";
 type BadgeVariant = "crimson" | "gold" | "neutral";
 
 const variantClasses: Record<BadgeVariant, string> = {
-  crimson: "bg-[var(--color-crimson-50)] text-[var(--color-crimson-900)]",
-  gold: "bg-[var(--color-gold-100)] text-[var(--color-gold-700)]",
-  neutral: "bg-[var(--color-bg-secondary)] text-[var(--color-text-secondary)]",
+  crimson:
+    "bg-[linear-gradient(135deg,var(--color-crimson-50),#fff)] text-[var(--color-crimson-900)] border border-[rgba(181,58,47,0.22)]",
+  gold:
+    "bg-[linear-gradient(135deg,var(--color-gold-100),#fff)] text-[var(--color-gold-700)] border border-[rgba(184,147,67,0.32)]",
+  neutral:
+    "bg-[linear-gradient(135deg,var(--color-bg-secondary),#fff)] text-[var(--color-text-secondary)] border border-[var(--color-border)]",
 };
 
 export function Badge({

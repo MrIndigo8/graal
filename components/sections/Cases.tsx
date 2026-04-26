@@ -5,7 +5,7 @@ import type { cases } from "@/content/cases";
 
 export function CasesSection({ items }: { items: typeof cases }) {
   return (
-    <Section id="cases-detail" title="Что получает клиент в сценариях запуска">
+    <Section id="cases-detail" title="Сценарии, по которым мы запускаем рост выручки">
       <div className="grid gap-4 md:grid-cols-3">
         {items.map((item) => (
           <Card
