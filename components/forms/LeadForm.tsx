@@ -1,6 +1,8 @@
 "use client";
 
-import { FormEvent, ReactNode, useState } from "react";
+import { FormEvent, useState } from "react";
+import { Button } from "@/components/ui/Button";
+import { Input, Select, Textarea } from "@/components/ui/FormControls";
 import { leadSchema } from "@/lib/validation";
 
 type SubmitState = "idle" | "loading" | "success" | "error";
@@ -77,7 +79,7 @@ export function LeadForm({
     <form
       id="lead-form"
       onSubmit={handleSubmit}
-      className="grid gap-4 rounded-lg border border-[var(--color-border)] bg-white p-6 shadow-sm"
+      className="grid gap-4 rounded-[var(--radius-card)] border border-[var(--color-border)] bg-white p-[var(--card-padding)] shadow-sm"
     >
       <input
         className="hidden"
@@ -88,19 +90,19 @@ export function LeadForm({
       />
 
       <div className="grid gap-4 md:grid-cols-2">
-        <Field label="Ваше имя" name="name" placeholder="Иван" />
-        <Field label="Компания" name="company" placeholder="Graal Agency" />
+        <Input label="Ваше имя" name="name" placeholder="Иван" />
+        <Input label="Компания" name="company" placeholder="Graal Agency" />
       </div>
 
       <div className="grid gap-4 md:grid-cols-2">
-        <Select label="Ниша" name="niche">
+        <Select label="Ниша" name="niche" defaultValue="it">
           <option value="it">IT / SaaS</option>
           <option value="igaming">iGaming / Fintech</option>
           <option value="infobusiness">Инфобизнес</option>
           <option value="ai">ИИ-автоматизация</option>
           <option value="other">Другое</option>
         </Select>
-        <Select label="Средний чек" name="avgDeal">
+        <Select label="Средний чек" name="avgDeal" defaultValue="1-5k">
           <option value="lt-1k">до €1k</option>
           <option value="1-5k">€1-5k</option>
           <option value="5-20k">€5-20k</option>
@@ -109,13 +111,13 @@ export function LeadForm({
       </div>
 
       <div className="grid gap-4 md:grid-cols-2">
-        <Select label="Нужно людей" name="teamSize">
+        <Select label="Нужно людей" name="teamSize" defaultValue="1-2">
           <option value="1-2">1-2</option>
           <option value="3-5">3-5</option>
           <option value="5-10">5-10</option>
           <option value="10-plus">10+</option>
         </Select>
-        <Select label="Канал связи" name="messenger">
+        <Select label="Канал связи" name="messenger" defaultValue="telegram">
           <option value="telegram">Telegram</option>
           <option value="whatsapp">WhatsApp</option>
           <option value="email">Email</option>
@@ -123,17 +125,18 @@ export function LeadForm({
         </Select>
       </div>
 
-      <Field label="Контакт" name="contact" placeholder="@username, email или телефон" />
+      <Input
+        label="Контакт"
+        name="contact"
+        placeholder="@username, email или телефон"
+      />
 
-      <label className="grid gap-2 text-sm font-medium text-[var(--color-text-primary)]">
-        Кратко о задаче
-        <textarea
-          name="comment"
-          rows={4}
-          className="rounded border border-[var(--color-border)] bg-white px-4 py-3 text-base outline-none transition focus:border-[var(--color-crimson-400)]"
-          placeholder="Например: нужен outbound для SaaS на рынок Польши"
-        />
-      </label>
+      <Textarea
+        label="Кратко о задаче"
+        name="comment"
+        rows={4}
+        placeholder="Например: нужен outbound для SaaS на рынок Польши"
+      />
 
       <label className="flex gap-3 text-sm leading-6 text-[var(--color-text-secondary)]">
         <input name="consent" type="checkbox" className="mt-1 size-4" />
@@ -143,13 +146,13 @@ export function LeadForm({
         </span>
       </label>
 
-      <button
+      <Button
         type="submit"
         disabled={state === "loading"}
-        className="rounded bg-[var(--color-crimson-400)] px-6 py-4 font-medium text-white transition hover:bg-[var(--color-crimson-600)] disabled:cursor-not-allowed disabled:opacity-60"
+        size="lg"
       >
         {state === "loading" ? "Отправляем..." : submitLabel}
-      </button>
+      </Button>
 
       {message ? (
         <p
@@ -163,48 +166,5 @@ export function LeadForm({
         </p>
       ) : null}
     </form>
-  );
-}
-
-function Field({
-  label,
-  name,
-  placeholder,
-}: {
-  label: string;
-  name: string;
-  placeholder: string;
-}) {
-  return (
-    <label className="grid gap-2 text-sm font-medium text-[var(--color-text-primary)]">
-      {label}
-      <input
-        name={name}
-        className="rounded border border-[var(--color-border)] bg-white px-4 py-3 text-base outline-none transition focus:border-[var(--color-crimson-400)]"
-        placeholder={placeholder}
-      />
-    </label>
-  );
-}
-
-function Select({
-  label,
-  name,
-  children,
-}: {
-  label: string;
-  name: string;
-  children: ReactNode;
-}) {
-  return (
-    <label className="grid gap-2 text-sm font-medium text-[var(--color-text-primary)]">
-      {label}
-      <select
-        name={name}
-        className="rounded border border-[var(--color-border)] bg-white px-4 py-3 text-base outline-none transition focus:border-[var(--color-crimson-400)]"
-      >
-        {children}
-      </select>
-    </label>
   );
 }

@@ -319,6 +319,18 @@ export function AdminBuilder({
                       value={block.title}
                       onChange={(value) => updateBlock(blockIndex, { title: value })}
                     />
+                    {block.type === "cards" ? (
+                      <RangeInput
+                        label="Колонки на desktop"
+                        min={1}
+                        max={4}
+                        step={1}
+                        value={block.columns ?? 2}
+                        onChange={(value) =>
+                          updateBlock(blockIndex, { columns: value })
+                        }
+                      />
+                    ) : null}
                     {"body" in block ? (
                       <TextareaInput
                         label="Текст"
@@ -330,31 +342,54 @@ export function AdminBuilder({
                     <div className="grid gap-3">
                       {block.items.map((item, itemIndex) => (
                         <div
-                          className="grid gap-3 rounded border border-[var(--color-border)] bg-white p-3 md:grid-cols-2"
+                          className="grid gap-3 rounded border border-[var(--color-border)] bg-white p-3"
                           key={`${block.id}-${itemIndex}`}
                         >
-                          <TextInput
-                            label={`Item ${itemIndex + 1}: title`}
-                            value={item.title}
-                            onChange={(value) =>
-                              updateItem(blockIndex, itemIndex, {
-                                ...item,
-                                title: value,
-                              })
-                            }
-                          />
-                          <TextInput
-                            label={`Item ${itemIndex + 1}: text`}
-                            value={item.text}
-                            onChange={(value) =>
-                              updateItem(blockIndex, itemIndex, {
-                                ...item,
-                                text: value,
-                              })
-                            }
-                          />
+                          <div className="flex items-center justify-between gap-3">
+                            <p className="text-sm font-medium">
+                              Элемент {itemIndex + 1}
+                            </p>
+                            <button
+                              className="rounded border border-[var(--color-border)] px-3 py-1 text-xs text-[var(--color-text-secondary)] disabled:cursor-not-allowed disabled:opacity-40"
+                              disabled={block.items.length <= 1}
+                              onClick={() => removeItem(blockIndex, itemIndex)}
+                              type="button"
+                            >
+                              Удалить
+                            </button>
+                          </div>
+                          <div className="grid gap-3 md:grid-cols-2">
+                            <TextInput
+                              label="Заголовок"
+                              value={item.title}
+                              onChange={(value) =>
+                                updateItem(blockIndex, itemIndex, {
+                                  ...item,
+                                  title: value,
+                                })
+                              }
+                            />
+                            <TextInput
+                              label="Текст"
+                              value={item.text}
+                              onChange={(value) =>
+                                updateItem(blockIndex, itemIndex, {
+                                  ...item,
+                                  text: value,
+                                })
+                              }
+                            />
+                          </div>
                         </div>
                       ))}
+                      <button
+                        className="rounded border border-dashed border-[var(--color-crimson-400)] bg-white px-4 py-3 text-sm font-medium text-[var(--color-crimson-400)] disabled:cursor-not-allowed disabled:opacity-50"
+                        disabled={block.items.length >= 12}
+                        onClick={() => addItem(blockIndex)}
+                        type="button"
+                      >
+                        Добавить элемент
+                      </button>
                     </div>
                   </div>
                 </div>
@@ -392,6 +427,40 @@ export function AdminBuilder({
               items: block.items.map((item, nestedIndex) =>
                 nestedIndex === itemIndex ? nextItem : item,
               ),
+            }
+          : block,
+      ),
+    });
+  }
+
+  function addItem(blockIndex: number) {
+    setConfig({
+      ...config,
+      blocks: config.blocks.map((block, index) =>
+        index === blockIndex
+          ? {
+              ...block,
+              items: [
+                ...block.items,
+                {
+                  title: "Новый элемент",
+                  text: "Опишите смысл элемента.",
+                },
+              ],
+            }
+          : block,
+      ),
+    });
+  }
+
+  function removeItem(blockIndex: number, itemIndex: number) {
+    setConfig({
+      ...config,
+      blocks: config.blocks.map((block, index) =>
+        index === blockIndex
+          ? {
+              ...block,
+              items: block.items.filter((_, nestedIndex) => nestedIndex !== itemIndex),
             }
           : block,
       ),
