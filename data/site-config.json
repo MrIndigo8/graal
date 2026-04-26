@@ -1,0 +1,113 @@
+{
+  "version": 1,
+  "brand": {
+    "name": "ГРААЛЬ",
+    "tagline": "Агентство продаж полного цикла"
+  },
+  "theme": {
+    "colors": {
+      "bgPrimary": "#FAFAF8",
+      "bgSecondary": "#F5F3EE",
+      "bgDark": "#1A0A0A",
+      "crimson": "#C0392B",
+      "crimsonHover": "#922B21",
+      "crimsonSoft": "#FDF2F2",
+      "gold": "#C9A84C",
+      "goldDark": "#9A7A2E",
+      "textPrimary": "#1C1410",
+      "textSecondary": "#6B5E52",
+      "border": "#E2DAD0"
+    },
+    "typography": {
+      "headingFont": "Cormorant Garamond",
+      "bodyFont": "Inter",
+      "headingScale": 1,
+      "bodyScale": 1
+    },
+    "shape": {
+      "radius": 8,
+      "buttonRadius": 4,
+      "cardPadding": 24
+    },
+    "layout": {
+      "containerMaxWidth": 1152,
+      "sectionPaddingDesktop": 96,
+      "sectionPaddingMobile": 64
+    }
+  },
+  "buttons": {
+    "primaryLabel": "Получить бесплатную оценку",
+    "secondaryLabel": "Смотреть кейсы",
+    "finalCtaLabel": "Получить смету за 48 часов"
+  },
+  "form": {
+    "title": "Получите бесплатную смету за 48 часов",
+    "subtitle": "Расскажите о задаче — мы подготовим состав команды, стек, ориентиры по KPI и бюджет запуска без обязательств.",
+    "submitLabel": "Получить смету за 48 часов",
+    "successMessage": "Заявка принята. Смета будет готова за 48 часов."
+  },
+  "blocks": [
+    {
+      "id": "hero",
+      "type": "hero",
+      "enabled": true,
+      "eyebrow": "Агентство продаж полного цикла",
+      "title": "Ваша машина продаж — под ключ",
+      "body": "Строим команды продаж, настраиваем CRM, outreach и ИИ-автоматизацию для IT, iGaming и инфобизнеса. За 48 часов подготовим состав команды, KPI и бюджет запуска.",
+      "items": [
+        { "title": "14", "text": "дней до первых звонков" },
+        { "title": "3", "text": "ключевые ниши" },
+        { "title": "48", "text": "часов до сметы" },
+        { "title": "KPI", "text": "в договоре" }
+      ]
+    },
+    {
+      "id": "problem",
+      "type": "cards",
+      "enabled": true,
+      "title": "Почему продажи в штате не работают",
+      "items": [
+        { "title": "Долго нанимать", "text": "Рекрутинг РОПа и онбординг легко съедают квартал." },
+        { "title": "Дорого держать", "text": "Зарплата, налоги, стек и управление растят фикс-косты." },
+        { "title": "Нет процессов", "text": "Без CRM, скриптов и KPI результат зависит от интуиции." },
+        { "title": "Постоянная текучка", "text": "Каждая замена продажника возвращает систему назад." }
+      ]
+    },
+    {
+      "id": "how-it-works",
+      "type": "cards",
+      "enabled": true,
+      "title": "Как работает Грааль",
+      "columns": 3,
+      "items": [
+        { "title": "1. Аудит и смета", "text": "Изучаем продукт, рынок, воронку, KPI и бюджет." },
+        { "title": "2. Сборка команды", "text": "Подбираем роли, настраиваем CRM, базы и скрипты." },
+        { "title": "3. Запуск", "text": "Первые звонки, отчётность и корректировки в режиме реального времени." }
+      ]
+    },
+    {
+      "id": "niches",
+      "type": "cards",
+      "enabled": true,
+      "title": "Три ниши, где мы даём максимум пользы",
+      "columns": 3,
+      "items": [
+        { "title": "IT / SaaS", "text": "SDR/BDR, outbound, Apollo, Clay, LinkedIn, CRM." },
+        { "title": "iGaming / Fintech", "text": "BizDev, партнёрства, compliance-aware продажи." },
+        { "title": "Инфобизнес", "text": "РОП, команда закрытия, апселлы, LTV и реактивация." }
+      ]
+    },
+    {
+      "id": "cases",
+      "type": "cards",
+      "enabled": true,
+      "title": "Результаты и сценарии",
+      "columns": 3,
+      "items": [
+        { "title": "IT / SaaS", "text": "Модельный сценарий: рост pipeline через SDR и outreach." },
+        { "title": "iGaming", "text": "Модельный сценарий: запуск партнёрского BizDev-процесса." },
+        { "title": "Инфобизнес", "text": "Модельный сценарий: усиление отдела закрытия входящих лидов." }
+      ]
+    }
+  ]
+}

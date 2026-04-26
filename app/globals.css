@@ -1,26 +1,76 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --color-bg-primary: #fafaf8;
+  --color-bg-secondary: #f5f3ee;
+  --color-bg-tertiary: #ede9e0;
+  --color-bg-dark: #1a0a0a;
+  --color-crimson-50: #fdf2f2;
+  --color-crimson-400: #c0392b;
+  --color-crimson-600: #922b21;
+  --color-crimson-900: #4a0e0e;
+  --color-gold-100: #fdf5dc;
+  --color-gold-300: #e8c870;
+  --color-gold-500: #c9a84c;
+  --color-gold-700: #9a7a2e;
+  --color-text-primary: #1c1410;
+  --color-text-secondary: #6b5e52;
+  --color-text-muted: #9e9085;
+  --color-border: #e2dad0;
+  --color-border-light: #ede9e0;
+  --container-max: 1152px;
+  --page-padding-x: clamp(1rem, 4vw, 2.5rem);
+  --section-padding-y: clamp(4rem, 8vw, 6rem);
+  --card-padding: clamp(1.25rem, 2vw, 2rem);
+  --radius-card: 8px;
+  --radius-button: 4px;
+  --font-scale-heading: 1;
+  --font-scale-body: 1;
+  --h1-fluid: clamp(3.5rem, calc(7vw * var(--font-scale-heading)), 6rem);
+  --h2-fluid: clamp(2.5rem, calc(4vw * var(--font-scale-heading)), 3.5rem);
+  --body-fluid: clamp(1rem, calc(1vw * var(--font-scale-body)), 1.125rem);
+  --background: var(--color-bg-primary);
+  --foreground: var(--color-text-primary);
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --font-sans: var(--font-inter);
+  --font-display: var(--font-cormorant);
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-inter), system-ui, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  text-size-adjust: 100%;
+}
+
+::selection {
+  background: var(--color-crimson-100, #fadddd);
+  color: var(--color-crimson-900);
+}
+
+img,
+svg,
+video,
+canvas {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+  }
 }
