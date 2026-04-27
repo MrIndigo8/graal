@@ -27,9 +27,10 @@ function mergeMessages(
   return output;
 }
 
-export default getRequestConfig(async ({ locale }) => {
-  const nextLocale = hasLocale(routing.locales, locale)
-    ? locale
+export default getRequestConfig(async ({ requestLocale }) => {
+  const requested = await requestLocale;
+  const nextLocale = hasLocale(routing.locales, requested)
+    ? requested
     : routing.defaultLocale;
   const base = (await import("../messages/en.json")).default;
   const localized =
