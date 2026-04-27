@@ -1,15 +1,28 @@
 import type { MetadataRoute } from "next";
-import { env } from "@/config/env";
+import { routing } from "@/i18n/routing";
 
-const routes = ["", "/privacy"];
+const routes = [
+  "",
+  "/outbound",
+  "/inbound",
+  "/hybrid",
+  "/training",
+  "/careers",
+  "/quiz",
+  "/cases",
+  "/blog",
+];
 
 export default function sitemap(): MetadataRoute.Sitemap {
+  const base = "https://graal.agency";
   const now = new Date();
 
-  return routes.map((route) => ({
-    url: `${env.siteUrl}${route}`,
-    lastModified: now,
-    changeFrequency: route === "" ? "weekly" : "monthly",
-    priority: route === "" ? 1 : 0.4,
-  }));
+  return routing.locales.flatMap((locale) =>
+    routes.map((route) => ({
+      url: `${base}/${locale}${route}`,
+      lastModified: now,
+      changeFrequency: "weekly" as const,
+      priority: route === "" ? 1 : 0.7,
+    })),
+  );
 }

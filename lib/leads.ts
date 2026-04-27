@@ -25,8 +25,9 @@ export async function processLead(lead: LeadPayload): Promise<LeadResponse> {
     leadId,
     score,
     qualification,
+    partial: hasFailedIntegration,
     message: hasFailedIntegration
-      ? "Заявка принята. Часть интеграций временно недоступна."
-      : "Заявка принята. Смета будет готова за 48 часов.",
+      ? "Request accepted. Some integrations are temporarily unavailable."
+      : "Request accepted. Proposal will be ready in 48 hours.",
   };
 }

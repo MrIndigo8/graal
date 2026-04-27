@@ -1,22 +1,22 @@
 {
   "version": 1,
   "brand": {
-    "name": "ГРААЛЬ",
+    "name": "Graal",
     "tagline": "Системные продажи для роста выручки"
   },
   "theme": {
     "colors": {
-      "bgPrimary": "#FAFAF8",
-      "bgSecondary": "#F5F3EE",
-      "bgDark": "#1A0A0A",
-      "crimson": "#C0392B",
-      "crimsonHover": "#922B21",
-      "crimsonSoft": "#FDF2F2",
-      "gold": "#C9A84C",
-      "goldDark": "#9A7A2E",
-      "textPrimary": "#1C1410",
-      "textSecondary": "#6B5E52",
-      "border": "#E2DAD0"
+      "bgPrimary": "#06080D",
+      "bgSecondary": "#0C1118",
+      "bgDark": "#020305",
+      "crimson": "#8EB8FF",
+      "crimsonHover": "#5B8DEF",
+      "crimsonSoft": "#1A2436",
+      "gold": "#C9A962",
+      "goldDark": "#8F6F3A",
+      "textPrimary": "#F5F3EF",
+      "textSecondary": "#9AA5B8",
+      "border": "#242E3D"
     },
     "typography": {
       "headingFont": "Cormorant Garamond",
@@ -25,8 +25,8 @@
       "bodyScale": 1
     },
     "shape": {
-      "radius": 8,
-      "buttonRadius": 4,
+      "radius": 14,
+      "buttonRadius": 10,
       "cardPadding": 24
     },
     "layout": {
@@ -53,7 +53,7 @@
       "enabled": true,
       "eyebrow": "Партнер по построению продаж",
       "title": "Мы строим отделы продаж, которые приносят предсказуемую выручку",
-      "body": "ГРААЛЬ берет на себя запуск и развитие продаж под ключ: стратегия, команда, процессы, CRM, контроль качества и управляемые KPI. Вы получаете не набор людей, а работающую систему роста.",
+      "body": "Graal берет на себя запуск и развитие продаж под ключ: стратегия, команда, процессы, CRM, контроль качества и управляемые KPI. Вы получаете не набор людей, а работающую систему роста.",
       "items": [
         { "title": "14", "text": "дней до активного запуска" },
         { "title": "3", "text": "фокуса: IT, iGaming, инфобизнес" },

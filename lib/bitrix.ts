@@ -16,25 +16,24 @@ function mapLeadToBitrixFields({
   qualification,
 }: BitrixLead) {
   return {
-    TITLE: `Грааль: ${lead.company} / ${lead.niche}`,
+    TITLE: `Graal: ${lead.company} / ${lead.service}`,
     NAME: lead.name,
     COMPANY_TITLE: lead.company,
     COMMENTS: [
-      lead.comment,
       `Lead ID: ${leadId}`,
       `Qualification: ${qualification}`,
       `Lead score: ${score}`,
-      `Messenger: ${lead.messenger}`,
       `Contact: ${lead.contact}`,
+      `Stage: ${lead.stage}`,
+      `Service: ${lead.service}`,
       `Page: ${lead.source?.page ?? "-"}`,
       `UTM: ${lead.source?.utmSource ?? "-"}/${lead.source?.utmCampaign ?? "-"}`,
     ]
       .filter(Boolean)
       .join("\n"),
     SOURCE_ID: "WEB",
-    UF_CRM_NICHE: lead.niche,
-    UF_CRM_AVG_DEAL: lead.avgDeal,
-    UF_CRM_TEAM_SIZE: lead.teamSize,
+    UF_CRM_SERVICE: lead.service,
+    UF_CRM_STAGE: lead.stage,
     UF_CRM_LANGUAGE: lead.source?.locale ?? "ru",
     UF_CRM_PAGE_PATH: lead.source?.page,
     UF_CRM_UTM_SOURCE: lead.source?.utmSource,

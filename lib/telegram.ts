@@ -21,22 +21,18 @@ function formatLeadMessage({
   qualification,
 }: TelegramLead) {
   return [
-    "Новая заявка - Грааль",
-    "",
+    "🔔 Новая заявка — Graal",
+    "──────────────────",
     `ID: ${leadId}`,
-    `Квалификация: ${qualification}`,
-    `Lead score: ${score}`,
-    "",
     `Имя: ${lead.name}`,
     `Компания: ${lead.company}`,
-    `Ниша: ${lead.niche}`,
-    `Средний чек: ${lead.avgDeal}`,
-    `Размер команды: ${lead.teamSize}`,
-    `Контакт: ${lead.messenger} / ${lead.contact}`,
-    lead.comment ? `Комментарий: ${lead.comment}` : undefined,
-    "",
-    `Страница: ${lead.source?.page ?? "-"}`,
-    `UTM: ${lead.source?.utmSource ?? "-"}/${lead.source?.utmCampaign ?? "-"}`,
+    `Услуга: ${lead.service}`,
+    `Стадия: ${lead.stage}`,
+    `Контакт: ${lead.contact}`,
+    `Квалификация: ${qualification}`,
+    `Lead score: ${score}`,
+    `UTM: ${lead.source?.utmSource ?? "-"} / ${lead.source?.utmMedium ?? "-"} / ${lead.source?.utmCampaign ?? "-"}`,
+    "──────────────────",
   ]
     .filter(Boolean)
     .join("\n");

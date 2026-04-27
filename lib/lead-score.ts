@@ -3,20 +3,22 @@ import type { LeadPayload, LeadQualification } from "@/lib/validation";
 export function calculateLeadScore(lead: LeadPayload) {
   let score = 0;
 
-  if (lead.avgDeal === "5-20k" || lead.avgDeal === "gt-20k") {
+  if (lead.stage === "growth") {
+    score += 40;
+  } else if (lead.stage === "early") {
     score += 30;
-  }
-
-  if (["3-5", "5-10", "10-plus"].includes(lead.teamSize)) {
+  } else {
     score += 20;
   }
 
-  if (["it", "igaming", "infobusiness"].includes(lead.niche)) {
+  if (lead.service === "hybrid") {
+    score += 25;
+  } else if (lead.service === "outbound" || lead.service === "inbound") {
     score += 20;
-  }
-
-  if ((lead.comment?.length ?? 0) > 30) {
+  } else if (lead.service === "training") {
     score += 15;
+  } else {
+    score += 10;
   }
 
   if (
@@ -27,8 +29,12 @@ export function calculateLeadScore(lead: LeadPayload) {
     score += 10;
   }
 
-  if (lead.avgDeal === "lt-1k") {
-    score -= 40;
+  if (
+    lead.contact.includes("@") ||
+    lead.contact.includes("http") ||
+    lead.contact.includes("linkedin")
+  ) {
+    score += 10;
   }
 
   return Math.max(0, score);

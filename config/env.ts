@@ -4,6 +4,9 @@ export const env = {
   telegramChatId: process.env.TELEGRAM_CHAT_ID,
   bitrix24WebhookUrl: process.env.BITRIX24_WEBHOOK_URL,
   turnstileSecretKey: process.env.TURNSTILE_SECRET_KEY,
+  plausibleDomain: process.env.NEXT_PUBLIC_PLAUSIBLE_DOMAIN,
+  clarityId: process.env.NEXT_PUBLIC_CLARITY_ID,
+  calendlyUrl: process.env.NEXT_PUBLIC_CALENDLY_URL,
 };
 
 export function hasTelegramConfig() {

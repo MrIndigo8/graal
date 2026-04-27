@@ -6,12 +6,9 @@ const contactPattern =
 export const leadSchema = z.object({
   name: z.string().trim().min(2).max(80),
   company: z.string().trim().min(2).max(120),
-  niche: z.enum(["it", "igaming", "infobusiness", "ai", "other"]),
-  avgDeal: z.enum(["lt-1k", "1-5k", "5-20k", "gt-20k"]),
-  teamSize: z.enum(["1-2", "3-5", "5-10", "10-plus"]),
-  messenger: z.enum(["telegram", "whatsapp", "email", "phone"]),
+  service: z.enum(["outbound", "inbound", "hybrid", "training", "not-sure"]),
+  stage: z.enum(["pre-revenue", "early", "growth"]),
   contact: z.string().trim().min(3).max(120).regex(contactPattern),
-  comment: z.string().trim().max(1000).optional().or(z.literal("")),
   consent: z.literal(true),
   source: z
     .object({
@@ -36,5 +33,6 @@ export type LeadResponse = {
   leadId?: string;
   score?: number;
   qualification?: LeadQualification;
+  partial?: boolean;
   message: string;
 };

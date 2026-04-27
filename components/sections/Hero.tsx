@@ -1,70 +1,118 @@
-import { Badge } from "@/components/ui/Badge";
-import { ButtonLink } from "@/components/ui/Button";
-import { Card } from "@/components/ui/Card";
-import type { SiteConfig } from "@/lib/site-config";
-import { GraalArtifact } from "./GraalArtifact";
+"use client";
 
-type HeroBlock = SiteConfig["blocks"][number];
+import { motion } from "framer-motion";
+import { useMemo } from "react";
+import { useTranslations } from "next-intl";
+import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
 
-export function Hero({
-  block,
-  tagline,
-  primaryLabel,
-  secondaryLabel,
-}: {
-  block: HeroBlock;
-  tagline: string;
-  primaryLabel: string;
-  secondaryLabel: string;
-}) {
+export function HeroSection() {
+  const t = useTranslations("hero");
+  const metrics = useMemo(
+    () => t.raw("metrics") as Array<{ value: string; label: string }>,
+    [t],
+  );
+
   return (
-    <section className="mx-auto grid max-w-[var(--container-max)] gap-12 px-[var(--page-padding-x)] py-[var(--section-padding-y)] lg:grid-cols-[1.08fr_0.92fr]">
-      <div>
-        <Badge className="mb-5">{block.eyebrow || tagline}</Badge>
-        <h1 className="font-[var(--font-cormorant)] text-[length:var(--h1-fluid)] leading-none text-[var(--color-text-primary)]">
-          {block.title}
-        </h1>
-        {block.body ? (
-          <p className="mt-8 max-w-2xl text-[length:var(--body-fluid)] leading-8 text-[var(--color-text-secondary)]">
-            {block.body}
+    <section className="relative overflow-hidden bg-[var(--bg-dark)] px-6 py-20 text-white md:px-10 md:py-28">
+      <div
+        aria-hidden
+        className="pointer-events-none absolute inset-0 opacity-20"
+        style={{
+          backgroundImage:
+            "linear-gradient(to right, rgba(201,168,76,0.2) 1px, transparent 1px), linear-gradient(to bottom, rgba(201,168,76,0.2) 1px, transparent 1px)",
+          backgroundSize: "40px 40px",
+        }}
+      />
+
+      <div className="relative mx-auto grid w-full max-w-6xl gap-12 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.3 }}
+          transition={{ duration: 0.5 }}
+          className="space-y-7"
+        >
+          <Badge className="border-[var(--gold)] bg-transparent text-[var(--gold)]">
+            {t("label")}
+          </Badge>
+
+          <h1
+            className="max-w-2xl text-5xl leading-[0.95] md:text-7xl"
+            style={{ fontFamily: "var(--font-cormorant)" }}
+          >
+            {t("titleLine1")}
+            <br />
+            {t("titleLine2")}
+          </h1>
+
+          <p className="max-w-2xl text-base leading-8 text-[#dfd5cf] md:text-lg">
+            {t("sub")}
           </p>
-        ) : null}
-        <div className="mt-10 flex flex-wrap gap-4">
-          <ButtonLink href="#lead-form" size="lg">
-            {primaryLabel}
-          </ButtonLink>
-          <ButtonLink href="#cases" variant="secondary" size="lg">
-            {secondaryLabel}
-          </ButtonLink>
-        </div>
+
+          <div className="flex flex-wrap gap-4">
+            <a href="#lead-form">
+              <Button>{t("ctaPrimary")}</Button>
+            </a>
+            <a href="#how-it-works">
+              <Button variant="ghost" className="border-[var(--gold)] text-[var(--gold)]">
+                {t("ctaSecondary")} ↓
+              </Button>
+            </a>
+          </div>
+        </motion.div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.3 }}
+          transition={{ duration: 0.5, delay: 0.1 }}
+          className="relative flex items-center justify-center"
+        >
+          <div className="absolute -inset-10 rounded-full bg-[radial-gradient(circle,rgba(201,168,76,0.22),transparent_68%)]" />
+          <svg
+            width="320"
+            height="320"
+            viewBox="0 0 320 320"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            className="relative h-auto w-[280px] md:w-[320px]"
+          >
+            <path
+              d="M76 78H244C243 148 222 202 160 242C98 202 77 148 76 78Z"
+              stroke="var(--gold)"
+              strokeWidth="2"
+            />
+            <path d="M115 78V56H205V78" stroke="var(--gold)" strokeWidth="2" />
+            <path d="M112 258H208" stroke="var(--gold)" strokeWidth="2" />
+            <path d="M136 242V258" stroke="var(--gold)" strokeWidth="2" />
+            <path d="M184 242V258" stroke="var(--gold)" strokeWidth="2" />
+            <path
+              d="M108 106H212"
+              stroke="var(--gold)"
+              strokeWidth="1.5"
+              strokeDasharray="6 6"
+            />
+            <path
+              d="M124 146H196"
+              stroke="var(--gold)"
+              strokeWidth="1.5"
+              strokeDasharray="6 6"
+            />
+          </svg>
+        </motion.div>
       </div>
 
-      <Card className="relative min-h-[520px] overflow-hidden bg-[var(--gradient-hero-glow),var(--gradient-paper)] shadow-[var(--shadow-luxe)]">
-        <GraalArtifact />
-        <div className="relative z-10">
-          <Badge variant="gold">Revenue system</Badge>
-          <p className="mt-6 max-w-sm text-sm leading-6 text-[var(--color-text-secondary)]">
-            Система продаж как управляемый актив: команда, стек, KPI и
-            ежедневная прозрачность вместо хаотичного найма.
-          </p>
-        </div>
-        <div className="relative z-10 mt-52 grid grid-cols-2 gap-4 sm:mt-60">
-          {block.items.map((item) => (
-            <Card
-              className="bg-white/86 shadow-sm backdrop-blur"
-              variant="metric"
-              key={item.text}
-            >
-              <div className="text-4xl font-light text-[var(--color-crimson-400)]">
-                {item.title}
-              </div>
-              <div className="mt-2 text-sm text-[var(--color-text-secondary)]">
-                {item.text}
-              </div>
-            </Card>
-          ))}
-        </div>
-      </Card>
+      <div className="relative mx-auto mt-16 grid w-full max-w-6xl gap-4 sm:grid-cols-2 lg:grid-cols-4">
+        {metrics.map((metric) => (
+          <div key={metric.label} className="border-l-2 border-[var(--crimson)] bg-white/5 p-4">
+            <p className="text-4xl font-light text-[var(--crimson)] md:text-5xl">
+              {metric.value}
+            </p>
+            <p className="mt-2 text-sm text-[#e9dfd9]">{metric.label}</p>
+          </div>
+        ))}
+      </div>
     </section>
   );
 }

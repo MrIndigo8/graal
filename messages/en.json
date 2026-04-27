@@ -1,0 +1,321 @@
+{
+  "nav": {
+    "services": "Services",
+    "industries": "Industries",
+    "cases": "Cases",
+    "training": "Training",
+    "careers": "Careers",
+    "cta": "Get proposal"
+  },
+  "hero": {
+    "label": "Sales team as a service",
+    "titleLine1": "The Holy Grail of Sales",
+    "titleLine2": "is not a myth",
+    "sub": "We rent you proven RoS, BizDev and full sales teams for IT SaaS, Fintech and EdTech companies. Team + infrastructure + results. From day one.",
+    "ctaPrimary": "Get a free proposal",
+    "ctaSecondary": "See how it works",
+    "metrics": [
+      { "value": "120+", "label": "Sales professionals placed" },
+      { "value": "3", "label": "Niches: SaaS · Fintech · EdTech" },
+      { "value": "14", "label": "Days to first outreach" },
+      { "value": "3", "label": "Engagement formats" }
+    ]
+  },
+  "problem": {
+    "title": "Why building sales in-house breaks founders",
+    "items": [
+      {
+        "title": "Hiring takes 3 months",
+        "text": "By the time your VP Sales starts, you've missed a quarter."
+      },
+      {
+        "title": "Full-time is expensive",
+        "text": "$120–180K/year for a senior RoS. Before tools, taxes, onboarding."
+      },
+      {
+        "title": "No process = no scale",
+        "text": "Without a playbook, CRM and KPIs your team works on gut feel."
+      },
+      {
+        "title": "People leave",
+        "text": "Every departure resets you to zero. Again."
+      }
+    ]
+  },
+  "howItWorks": {
+    "title": "You get a working revenue machine in 14 days",
+    "accent": "While competitors take 3 months, we take 14 days.",
+    "steps": [
+      {
+        "period": "Day 1-3",
+        "title": "Discovery",
+        "text": "We map your product, market, ICP and current funnel. Define team composition and stack."
+      },
+      {
+        "period": "Day 4-10",
+        "title": "Assembly",
+        "text": "We match and onboard your team. Set up CRM, sequences, scripts and reporting."
+      },
+      {
+        "period": "Day 11-14",
+        "title": "Launch",
+        "text": "First calls made. Pipeline starts moving. Weekly reports from day one."
+      }
+    ]
+  },
+  "services": {
+    "title": "Choose your growth model",
+    "cards": [
+      {
+        "slug": "outbound",
+        "name": "Outbound",
+        "subtitle": "Cold pipeline",
+        "roles": "BizDev + SDR/BDR",
+        "focus": "IT SaaS focus",
+        "price": "From €X/mo"
+      },
+      {
+        "slug": "inbound",
+        "name": "Inbound",
+        "subtitle": "Close warm leads",
+        "roles": "RoS + AE + Coach",
+        "focus": "EdTech focus",
+        "price": "From €X/mo"
+      },
+      {
+        "slug": "hybrid",
+        "name": "Hybrid",
+        "subtitle": "Full funnel",
+        "roles": "Everything",
+        "focus": "Scale focus",
+        "price": "From €X/mo"
+      }
+    ]
+  },
+  "whoWePlace": {
+    "title": "The people inside your future team",
+    "roles": [
+      { "name": "Fractional RoS", "kpi": "Revenue plan and KPI ownership", "tools": "HubSpot, Pipedrive" },
+      { "name": "BizDev Rep", "kpi": "New conversations booked", "tools": "LinkedIn, Apollo" },
+      { "name": "SDR/BDR", "kpi": "Qualified meetings", "tools": "Instantly, Clay" },
+      { "name": "Account Executive", "kpi": "Win-rate and deal velocity", "tools": "CRM, call recording" },
+      { "name": "Lead Gen", "kpi": "Verified leads per week", "tools": "Apollo, Hunter" },
+      { "name": "Sales Coach", "kpi": "Objection handling quality", "tools": "Call library, scorecards" },
+      { "name": "CRM Admin", "kpi": "Pipeline hygiene", "tools": "HubSpot, Salesforce" },
+      { "name": "AI Automator", "kpi": "Hours saved by automation", "tools": "Make, n8n, GPT" },
+      { "name": "Data Researcher", "kpi": "ICP data freshness", "tools": "BuiltWith, Sales Nav" }
+    ]
+  },
+  "forWhom": {
+    "title": "Built for every stage",
+    "items": [
+      {
+        "stage": "Pre-Revenue Startup",
+        "text": "You have a product. You have funding. You need your first sales system — fast.",
+        "package": "First Sales package"
+      },
+      {
+        "stage": "Early Stage (500K-3M ARR)",
+        "text": "You have traction but sales are chaotic. You need process, leadership and scale.",
+        "package": "Scale package"
+      },
+      {
+        "stage": "Growth Stage (3M+ ARR)",
+        "text": "You're expanding to a new market or vertical. You need a dedicated outbound squad — now.",
+        "package": "Expansion package"
+      }
+    ]
+  },
+  "industries": {
+    "title": "Deep expertise in three verticals",
+    "items": [
+      { "name": "IT SaaS", "text": "BizDev + cold outreach for enterprise and mid-market." },
+      { "name": "Fintech", "text": "Compliance-aware BizDev teams for B2B payments, lending and infra." },
+      { "name": "EdTech", "text": "Inbound closing teams with LTV focus for subscription businesses." }
+    ]
+  },
+  "cases": {
+    "title": "Results we've built",
+    "empty": "Case studies coming soon — NDA lift in progress."
+  },
+  "stack": {
+    "title": "The infrastructure behind your team",
+    "groups": [
+      { "name": "CRM", "tools": "HubSpot, Pipedrive, Salesforce, Bitrix24" },
+      { "name": "Outreach", "tools": "Instantly, Lemlist, Apollo, Clay" },
+      { "name": "Calling", "tools": "JustCall, Aircall, Ringover" },
+      { "name": "AI Layer", "tools": "OpenAI, Make, n8n, ElevenLabs" },
+      { "name": "Data", "tools": "Apollo, LinkedIn Sales Nav, Hunter, BuiltWith" },
+      { "name": "Analytics", "tools": "Looker Studio, Plausible, Mixpanel" }
+    ]
+  },
+  "mindset": {
+    "title": "Because tools and talent are not enough",
+    "sub": "The #1 reason sales teams underperform is mindset, not method. We work with the psychology behind the numbers.",
+    "cards": [
+      { "name": "Group Workshop", "text": "Team of 5-30. Remove fear blocks." },
+      { "name": "1-on-1 Coaching", "text": "For RoS and founders. Leadership mindset reset." },
+      { "name": "Corporate Program", "text": "Three-month workshop series for culture change." }
+    ],
+    "cta": "Explore training"
+  },
+  "models": {
+    "title": "Work with us your way",
+    "items": [
+      { "name": "Permanent Placement", "text": "We find your next VP Sales or BizDev. One-time fee: % of annual salary." },
+      { "name": "Fractional / Rental", "text": "The professional stays employed by us. Engagement from 3 months." },
+      { "name": "Full Team Outsource", "text": "Complete sales department: team, stack and management by Graal." }
+    ]
+  },
+  "faq": {
+    "title": "FAQ",
+    "answer": "We answer this during discovery and include it in your proposal.",
+    "questions": [
+      "How fast can you start?",
+      "What if results don't meet KPIs?",
+      "Do we sign an NDA?",
+      "Can you work with our existing CRM?",
+      "Who manages the team day-to-day?",
+      "What's the minimum commitment?",
+      "Do you work with non-English-speaking markets?",
+      "What makes Graal different from a staffing agency?"
+    ]
+  },
+  "leadForm": {
+    "title": "Open the revenue tap",
+    "sub": "Tell us about your stage and goal. We'll send you a team proposal in 48 hours.",
+    "nameLabel": "First name",
+    "companyLabel": "Company",
+    "serviceLabel": "What do you need?",
+    "stageLabel": "Company stage",
+    "contactLabel": "Preferred contact",
+    "submit": "Send request",
+    "privacy": "NDA available before any call. No spam. Ever.",
+    "success": "Request accepted. We will contact you within 48 hours.",
+    "error": "Request failed. Please try again.",
+    "calendlyTitle": "Free Sales Audit Call",
+    "serviceOptions": [
+      { "value": "outbound", "label": "Outbound" },
+      { "value": "inbound", "label": "Inbound" },
+      { "value": "hybrid", "label": "Hybrid" },
+      { "value": "training", "label": "Training" },
+      { "value": "not-sure", "label": "Not sure" }
+    ],
+    "stageOptions": [
+      { "value": "pre-revenue", "label": "Pre-revenue" },
+      { "value": "early", "label": "Early" },
+      { "value": "growth", "label": "Growth" }
+    ]
+  },
+  "pages": {
+    "outbound": {
+      "title": "Outbound Teams & Solutions",
+      "sub": "Cold outreach systems for IT SaaS, Fintech and EdTech.",
+      "bullets": [
+        "BizDev Representative for cold networking and LinkedIn outreach.",
+        "SDR/BDR for qualification and meeting generation.",
+        "RoS for process management, KPI and weekly reporting.",
+        "CRM setup, scripts, data sourcing and call ops included."
+      ]
+    },
+    "inbound": {
+      "title": "Inbound Teams & Solutions",
+      "sub": "Warm lead conversion, playbooks and LTV growth.",
+      "bullets": [
+        "RoS to run warm-lead team and closing pipeline.",
+        "Account Executive to increase close rate and speed.",
+        "Sales Coach for scripts, objections and upsell flow.",
+        "Reactivation loop and LTV-led playbook included."
+      ]
+    },
+    "hybrid": {
+      "title": "Hybrid Teams & Solutions",
+      "sub": "One integrated funnel from outbound pipeline to closed revenue.",
+      "bullets": [
+        "Fractional RoS for full-funnel governance.",
+        "Outbound pod (BDR/SDR) to create pipeline.",
+        "Inbound closers (AE) to convert warm demand.",
+        "AI automation layer (Make, n8n, GPT enrichment)."
+      ]
+    },
+    "training": {
+      "title": "Sales Mindset & Corporate Training",
+      "sub": "Work on the psychology behind numbers: fear, confidence, leadership and growth mindset.",
+      "cards": [
+        {
+          "title": "Group workshop",
+          "text": "One-day format for sales teams (5-30 people)."
+        },
+        {
+          "title": "1-on-1 coaching",
+          "text": "4-8 sessions for founder, RoS or sales leader."
+        },
+        {
+          "title": "Corporate program",
+          "text": "1-3 month series focused on leadership and culture shift."
+        }
+      ]
+    },
+    "careers": {
+      "title": "Join the Graal network",
+      "sub": "Work on the best products. Set your own terms. We place you — you close deals.",
+      "roles": [
+        "Fractional RoS with 5+ years experience.",
+        "BizDev reps with SaaS / Fintech background.",
+        "SDR/BDR with outbound track record.",
+        "Sales coaches and trainers."
+      ],
+      "form": {
+        "name": "Name",
+        "role": "Role",
+        "linkedin": "LinkedIn",
+        "pitch": "Short pitch about yourself",
+        "submit": "Submit profile"
+      }
+    },
+    "quiz": {
+      "title": "Revenue Readiness Quiz",
+      "sub": "Answer five questions and get your score with a recommended model."
+    },
+    "cases": {
+      "title": "All case studies",
+      "sub": "Case studies are in NDA lift progress. Structure is ready.",
+      "columns": ["Niche", "Challenge", "Team", "Result"],
+      "empty": "Case studies coming soon — NDA lift in progress."
+    },
+    "blog": {
+      "title": "Blog",
+      "sub": "Insights on pipeline, ARR growth and sales operations."
+    }
+  },
+  "common": {
+    "requestProposal": "Request proposal"
+  },
+  "quiz": {
+    "questions": [
+      "What's your company stage?",
+      "Do you have a working CRM?",
+      "How many leads do you generate monthly?",
+      "Do you have a defined ICP and sales playbook?",
+      "What's your current biggest sales blocker?"
+    ],
+    "options": [
+      ["Pre-revenue", "Early", "Growth"],
+      ["No CRM", "Basic setup", "Advanced CRM"],
+      ["<20", "20-100", "100+"],
+      ["No", "Partially", "Yes"],
+      ["Pipeline", "Closing", "Team leadership"]
+    ],
+    "scoreLabel": "Your Revenue Readiness Score:",
+    "recommendedLabel": "Recommended model:",
+    "recommendations": {
+      "outbound": "Outbound",
+      "hybrid": "Hybrid",
+      "inbound": "Inbound"
+    }
+  },
+  "footer": {
+    "tagline": "We open the revenue tap",
+    "copy": "Graal. Revenue machine for SaaS, Fintech and EdTech."
+  }
+}

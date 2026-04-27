@@ -1,0 +1,321 @@
+{
+  "nav": {
+    "services": "Услуги",
+    "industries": "Индустрии",
+    "cases": "Кейсы",
+    "training": "Тренинги",
+    "careers": "Карьера",
+    "cta": "Получить смету"
+  },
+  "hero": {
+    "label": "Отдел продаж как сервис",
+    "titleLine1": "Святой Грааль продаж",
+    "titleLine2": "это не миф",
+    "sub": "Мы предоставляем в аренду проверенных RoS, BizDev и целые команды продаж для IT SaaS, Fintech и EdTech. Команда + инфраструктура + результат с первого дня.",
+    "ctaPrimary": "Получить бесплатное предложение",
+    "ctaSecondary": "Как это работает",
+    "metrics": [
+      { "value": "120+", "label": "Размещённых sales-специалистов" },
+      { "value": "3", "label": "Ниши: SaaS · Fintech · EdTech" },
+      { "value": "14", "label": "Дней до первого outreach" },
+      { "value": "3", "label": "Формата сотрудничества" }
+    ]
+  },
+  "problem": {
+    "title": "Почему строить продажи инхаус ломает фаундера",
+    "items": [
+      {
+        "title": "Найм занимает 3 месяца",
+        "text": "Пока ваш VP Sales выходит на работу, вы уже теряете квартал."
+      },
+      {
+        "title": "Фуллтайм слишком дорогой",
+        "text": "$120–180K в год за senior RoS. И это без инструментов, налогов и онбординга."
+      },
+      {
+        "title": "Нет процесса = нет масштаба",
+        "text": "Без playbook, CRM и KPI команда работает на ощущениях."
+      },
+      {
+        "title": "Люди уходят",
+        "text": "Каждый уход откатывает систему продаж к нулю."
+      }
+    ]
+  },
+  "howItWorks": {
+    "title": "За 14 дней вы получаете работающую revenue-машину",
+    "accent": "Пока конкуренты запускаются 3 месяца, мы запускаемся за 14 дней.",
+    "steps": [
+      {
+        "period": "День 1-3",
+        "title": "Discovery",
+        "text": "Разбираем продукт, рынок, ICP и текущую воронку. Определяем состав команды и стек."
+      },
+      {
+        "period": "День 4-10",
+        "title": "Assembly",
+        "text": "Подбираем и онбордим команду. Настраиваем CRM, sequence, скрипты и отчётность."
+      },
+      {
+        "period": "День 11-14",
+        "title": "Launch",
+        "text": "Первые звонки и активный pipeline. Еженедельные отчёты с первого дня."
+      }
+    ]
+  },
+  "services": {
+    "title": "Выберите модель роста",
+    "cards": [
+      {
+        "slug": "outbound",
+        "name": "Outbound",
+        "subtitle": "Холодный pipeline",
+        "roles": "BizDev + SDR/BDR",
+        "focus": "Фокус на IT SaaS",
+        "price": "От €X/мес"
+      },
+      {
+        "slug": "inbound",
+        "name": "Inbound",
+        "subtitle": "Закрытие тёплых лидов",
+        "roles": "RoS + AE + Coach",
+        "focus": "Фокус на EdTech",
+        "price": "От €X/мес"
+      },
+      {
+        "slug": "hybrid",
+        "name": "Hybrid",
+        "subtitle": "Полный funnel",
+        "roles": "Полный состав",
+        "focus": "Фокус на масштаб",
+        "price": "От €X/мес"
+      }
+    ]
+  },
+  "whoWePlace": {
+    "title": "Люди внутри вашей будущей команды",
+    "roles": [
+      { "name": "Fractional RoS", "kpi": "План по выручке и KPI", "tools": "HubSpot, Pipedrive" },
+      { "name": "BizDev Rep", "kpi": "Новые диалоги в pipeline", "tools": "LinkedIn, Apollo" },
+      { "name": "SDR/BDR", "kpi": "Квалифицированные встречи", "tools": "Instantly, Clay" },
+      { "name": "Account Executive", "kpi": "Win-rate и скорость сделки", "tools": "CRM, call recording" },
+      { "name": "Lead Gen", "kpi": "Валидные лиды в неделю", "tools": "Apollo, Hunter" },
+      { "name": "Sales Coach", "kpi": "Качество отработки возражений", "tools": "Call library, scorecards" },
+      { "name": "CRM Admin", "kpi": "Чистота и дисциплина воронки", "tools": "HubSpot, Salesforce" },
+      { "name": "AI Automator", "kpi": "Сэкономленные часы команды", "tools": "Make, n8n, GPT" },
+      { "name": "Data Researcher", "kpi": "Актуальность ICP-данных", "tools": "BuiltWith, Sales Nav" }
+    ]
+  },
+  "forWhom": {
+    "title": "Подходит для каждой стадии роста",
+    "items": [
+      {
+        "stage": "Pre-Revenue Startup",
+        "text": "У вас есть продукт и финансирование. Нужна первая система продаж быстро.",
+        "package": "Пакет First Sales"
+      },
+      {
+        "stage": "Early Stage (500K-3M ARR)",
+        "text": "Тракшн есть, но продажи хаотичны. Нужны процесс, лидерство и масштаб.",
+        "package": "Пакет Scale"
+      },
+      {
+        "stage": "Growth Stage (3M+ ARR)",
+        "text": "Выходите на новый рынок или вертикаль. Нужен выделенный outbound squad.",
+        "package": "Пакет Expansion"
+      }
+    ]
+  },
+  "industries": {
+    "title": "Глубокая экспертиза в трёх вертикалях",
+    "items": [
+      { "name": "IT SaaS", "text": "BizDev и холодный outreach для enterprise и mid-market." },
+      { "name": "Fintech", "text": "Compliance-aware BizDev-команды для платежей, lending и infra." },
+      { "name": "EdTech", "text": "Inbound-closing команды с упором на LTV в подписочных моделях." }
+    ]
+  },
+  "cases": {
+    "title": "Результаты, которые мы построили",
+    "empty": "Кейсы скоро появятся — идёт снятие NDA."
+  },
+  "stack": {
+    "title": "Инфраструктура за вашей командой",
+    "groups": [
+      { "name": "CRM", "tools": "HubSpot, Pipedrive, Salesforce, Bitrix24" },
+      { "name": "Outreach", "tools": "Instantly, Lemlist, Apollo, Clay" },
+      { "name": "Calling", "tools": "JustCall, Aircall, Ringover" },
+      { "name": "AI Layer", "tools": "OpenAI, Make, n8n, ElevenLabs" },
+      { "name": "Data", "tools": "Apollo, LinkedIn Sales Nav, Hunter, BuiltWith" },
+      { "name": "Analytics", "tools": "Looker Studio, Plausible, Mixpanel" }
+    ]
+  },
+  "mindset": {
+    "title": "Потому что инструментов и людей недостаточно",
+    "sub": "Причина #1, почему команды продаж не добирают результат — mindset, а не метод.",
+    "cards": [
+      { "name": "Групповой воркшоп", "text": "Команда 5-30 человек. Убираем страх и внутренние блоки." },
+      { "name": "Коучинг 1-на-1", "text": "Для RoS и фаундеров. Пересборка лидерского подхода." },
+      { "name": "Корпоративная программа", "text": "Трёхмесячная серия воркшопов для культурных изменений." }
+    ],
+    "cta": "Перейти к training"
+  },
+  "models": {
+    "title": "Работайте с нами в удобном формате",
+    "items": [
+      { "name": "Permanent Placement", "text": "Находим вашего VP Sales или BizDev. Разовая комиссия: % от годовой зарплаты." },
+      { "name": "Fractional / Rental", "text": "Специалист остаётся в нашей структуре. От 3 месяцев сотрудничества." },
+      { "name": "Full Team Outsource", "text": "Готовый отдел продаж: команда, стек и управление под ключ." }
+    ]
+  },
+  "faq": {
+    "title": "FAQ",
+    "answer": "Отвечаем на это в discovery и фиксируем в коммерческом предложении.",
+    "questions": [
+      "Как быстро вы можете стартовать?",
+      "Что если результат не соответствует KPI?",
+      "Подписываете ли вы NDA?",
+      "Можете работать с нашей текущей CRM?",
+      "Кто управляет командой каждый день?",
+      "Какой минимальный срок сотрудничества?",
+      "Работаете ли вы с неанглоязычными рынками?",
+      "Чем Graal отличается от кадрового агентства?"
+    ]
+  },
+  "common": {
+    "requestProposal": "Получить предложение"
+  },
+  "quiz": {
+    "questions": [
+      "На какой стадии ваша компания?",
+      "Есть ли у вас рабочая CRM?",
+      "Сколько лидов вы генерируете в месяц?",
+      "Есть ли у вас ICP и sales playbook?",
+      "Какой сейчас главный блокер в продажах?"
+    ],
+    "options": [
+      ["Pre-revenue", "Early", "Growth"],
+      ["Нет CRM", "Базовая настройка", "Продвинутая CRM"],
+      ["<20", "20-100", "100+"],
+      ["Нет", "Частично", "Да"],
+      ["Pipeline", "Closing", "Лидерство команды"]
+    ],
+    "scoreLabel": "Ваш Revenue Readiness Score:",
+    "recommendedLabel": "Рекомендуемая модель:",
+    "recommendations": {
+      "outbound": "Outbound",
+      "hybrid": "Hybrid",
+      "inbound": "Inbound"
+    }
+  },
+  "leadForm": {
+    "title": "Откройте revenue tap",
+    "sub": "Расскажите о стадии и цели. Отправим предложение команды за 48 часов.",
+    "nameLabel": "Имя",
+    "companyLabel": "Компания",
+    "serviceLabel": "Что вам нужно?",
+    "stageLabel": "Стадия компании",
+    "contactLabel": "Предпочтительный контакт",
+    "submit": "Отправить заявку",
+    "privacy": "NDA до звонка. Никакого спама.",
+    "error": "Ошибка отправки. Попробуйте ещё раз.",
+    "calendlyTitle": "Бесплатный аудит продаж",
+    "success": "Заявка принята. Мы свяжемся с вами в течение 48 часов.",
+    "serviceOptions": [
+      { "value": "outbound", "label": "Outbound" },
+      { "value": "inbound", "label": "Inbound" },
+      { "value": "hybrid", "label": "Hybrid" },
+      { "value": "training", "label": "Training" },
+      { "value": "not-sure", "label": "Не уверен" }
+    ],
+    "stageOptions": [
+      { "value": "pre-revenue", "label": "Pre-revenue" },
+      { "value": "early", "label": "Early" },
+      { "value": "growth", "label": "Growth" }
+    ]
+  },
+  "pages": {
+    "outbound": {
+      "title": "Outbound Teams & Solutions",
+      "sub": "Системы холодного outreach для IT SaaS, Fintech и EdTech.",
+      "bullets": [
+        "BizDev Representative для холодного networking и outreach в LinkedIn.",
+        "SDR/BDR для квалификации лидов и назначения встреч.",
+        "RoS для управления процессом, KPI и еженедельной отчётности.",
+        "Включены CRM setup, скрипты, базы данных и call operations."
+      ]
+    },
+    "inbound": {
+      "title": "Inbound Teams & Solutions",
+      "sub": "Конверсия тёплых лидов, playbook и рост LTV.",
+      "bullets": [
+        "RoS управляет командой закрытия входящих лидов.",
+        "Account Executive повышает close rate и скорость сделки.",
+        "Sales Coach усиливает скрипты, возражения и upsell.",
+        "Включены реактивация базы и LTV-ориентированный процесс."
+      ]
+    },
+    "hybrid": {
+      "title": "Hybrid Teams & Solutions",
+      "sub": "Единая воронка от outbound pipeline до закрытой выручки.",
+      "bullets": [
+        "Fractional RoS для управления полным циклом.",
+        "Outbound pod (BDR/SDR) для генерации pipeline.",
+        "Inbound closers (AE) для конверсии тёплого спроса.",
+        "AI-слой автоматизации (Make, n8n, GPT enrichment)."
+      ]
+    },
+    "training": {
+      "title": "Sales Mindset & Corporate Training",
+      "sub": "Работаем с психологией за цифрами: страх, уверенность, лидерство и growth mindset.",
+      "cards": [
+        {
+          "title": "Групповой воркшоп",
+          "text": "Однодневный формат для команд продаж (5-30 человек)."
+        },
+        {
+          "title": "Коучинг 1-на-1",
+          "text": "4-8 сессий для founder, RoS или sales leader."
+        },
+        {
+          "title": "Корпоративная программа",
+          "text": "Серия на 1-3 месяца с фокусом на лидерство и культуру."
+        }
+      ]
+    },
+    "careers": {
+      "title": "Присоединяйтесь к сети Graal",
+      "sub": "Работайте с лучшими продуктами. Устанавливайте свои условия. Мы вас размещаем — вы закрываете сделки.",
+      "roles": [
+        "Fractional RoS с опытом от 5 лет.",
+        "BizDev-специалисты с опытом в SaaS / Fintech.",
+        "SDR/BDR с подтверждённым outbound-треком.",
+        "Sales coaches и корпоративные тренеры."
+      ],
+      "form": {
+        "name": "Имя",
+        "role": "Роль",
+        "linkedin": "LinkedIn",
+        "pitch": "Короткий питч о себе",
+        "submit": "Отправить профиль"
+      }
+    },
+    "quiz": {
+      "title": "Revenue Readiness Quiz",
+      "sub": "Ответьте на 5 вопросов и получите score с рекомендацией модели."
+    },
+    "cases": {
+      "title": "Все кейсы",
+      "sub": "Кейсы в процессе снятия NDA. Структура уже готова.",
+      "columns": ["Ниша", "Задача", "Команда", "Результат"],
+      "empty": "Case studies скоро — снятие NDA в процессе."
+    },
+    "blog": {
+      "title": "Блог",
+      "sub": "Инсайты о pipeline, ARR и системных продажах."
+    }
+  },
+  "footer": {
+    "tagline": "We open the revenue tap",
+    "copy": "Graal. Revenue machine для SaaS, Fintech и EdTech."
+  }
+}

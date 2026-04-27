@@ -15,7 +15,7 @@ export async function POST(request: Request) {
 
   if (isRateLimited(clientKey)) {
     return NextResponse.json(
-      { ok: false, message: "Слишком много запросов. Попробуйте позже." },
+      { ok: false, message: "Too many requests. Try again later." },
       { status: 429 },
     );
   }
@@ -26,7 +26,7 @@ export async function POST(request: Request) {
     body = await request.json();
   } catch {
     return NextResponse.json(
-      { ok: false, message: "Некорректный JSON payload." },
+      { ok: false, message: "Invalid JSON payload." },
       { status: 400 },
     );
   }
@@ -37,7 +37,7 @@ export async function POST(request: Request) {
     return NextResponse.json(
       {
         ok: false,
-        message: "Проверьте поля формы.",
+        message: "Please check your form fields.",
         issues: parsed.error.flatten().fieldErrors,
       },
       { status: 400 },
@@ -47,20 +47,20 @@ export async function POST(request: Request) {
   if (parsed.data.website) {
     return NextResponse.json({
       ok: true,
-      message: "Заявка принята. Смета будет готова за 48 часов.",
+      message: "Request accepted. Proposal will be ready in 48 hours.",
     });
   }
 
   try {
     const result = await processLead(parsed.data);
-    const status = result.message.includes("интеграций") ? 202 : 200;
+    const status = result.partial ? 202 : 200;
 
     return NextResponse.json(result, { status });
   } catch {
     return NextResponse.json(
       {
         ok: false,
-        message: "Не удалось принять заявку. Попробуйте позже.",
+        message: "Unable to process request now. Please try later.",
       },
       { status: 500 },
     );

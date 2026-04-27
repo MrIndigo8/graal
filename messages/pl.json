@@ -1,0 +1,321 @@
+{
+  "common": {
+    "requestProposal": "Poproś o ofertę"
+  },
+  "nav": {
+    "services": "Usługi",
+    "industries": "Branże",
+    "cases": "Case studies",
+    "training": "Training",
+    "careers": "Kariera",
+    "cta": "Otrzymaj ofertę"
+  },
+  "hero": {
+    "label": "Sales team as a service",
+    "titleLine1": "Święty Graal sprzedaży",
+    "titleLine2": "to nie mit",
+    "sub": "Wynajmujemy sprawdzonych RoS, BizDev oraz pełne zespoły sprzedażowe dla IT SaaS, Fintech i EdTech. Zespół + infrastruktura + wynik od pierwszego dnia.",
+    "ctaPrimary": "Otrzymaj bezpłatną propozycję",
+    "ctaSecondary": "Zobacz jak to działa",
+    "metrics": [
+      { "value": "120+", "label": "Zatrudnionych specjalistów sprzedaży" },
+      { "value": "3", "label": "Nisze: SaaS · Fintech · EdTech" },
+      { "value": "14", "label": "Dni do pierwszego outreach" },
+      { "value": "3", "label": "Modele współpracy" }
+    ]
+  },
+  "problem": {
+    "title": "Dlaczego budowa sprzedaży in-house obciąża founderów",
+    "items": [
+      {
+        "title": "Rekrutacja trwa 3 miesiące",
+        "text": "Gdy VP Sales zaczyna pracę, tracisz już cały kwartał."
+      },
+      {
+        "title": "Full-time jest drogi",
+        "text": "$120–180K rocznie za senior RoS. Bez narzędzi, podatków i onboardingu."
+      },
+      {
+        "title": "Bez procesu nie ma skali",
+        "text": "Bez playbooka, CRM i KPI zespół działa intuicyjnie."
+      },
+      {
+        "title": "Ludzie odchodzą",
+        "text": "Każde odejście resetuje system sprzedaży do zera."
+      }
+    ]
+  },
+  "howItWorks": {
+    "title": "W 14 dni otrzymujesz działającą revenue machine",
+    "accent": "Gdy konkurencja potrzebuje 3 miesięcy, my potrzebujemy 14 dni.",
+    "steps": [
+      {
+        "period": "Dzień 1-3",
+        "title": "Discovery",
+        "text": "Mapujemy produkt, rynek, ICP i obecną lejkę. Ustalamy skład zespołu i stack."
+      },
+      {
+        "period": "Dzień 4-10",
+        "title": "Assembly",
+        "text": "Dobieramy i onboardujemy zespół. Konfigurujemy CRM, sekwencje, skrypty i raportowanie."
+      },
+      {
+        "period": "Dzień 11-14",
+        "title": "Launch",
+        "text": "Pierwsze rozmowy i działający pipeline. Raporty tygodniowe od pierwszego dnia."
+      }
+    ]
+  },
+  "services": {
+    "title": "Wybierz model wzrostu",
+    "cards": [
+      {
+        "slug": "outbound",
+        "name": "Outbound",
+        "subtitle": "Cold pipeline",
+        "roles": "BizDev + SDR/BDR",
+        "focus": "Fokus IT SaaS",
+        "price": "Od €X/mies."
+      },
+      {
+        "slug": "inbound",
+        "name": "Inbound",
+        "subtitle": "Domykanie ciepłych leadów",
+        "roles": "RoS + AE + Coach",
+        "focus": "Fokus EdTech",
+        "price": "Od €X/mies."
+      },
+      {
+        "slug": "hybrid",
+        "name": "Hybrid",
+        "subtitle": "Pełny funnel",
+        "roles": "Kompletny skład",
+        "focus": "Fokus na skalowanie",
+        "price": "Od €X/mies."
+      }
+    ]
+  },
+  "whoWePlace": {
+    "title": "Ludzie w Twoim przyszłym zespole",
+    "roles": [
+      { "name": "Fractional RoS", "kpi": "Plan revenue i ownership KPI", "tools": "HubSpot, Pipedrive" },
+      { "name": "BizDev Rep", "kpi": "Nowe rozmowy", "tools": "LinkedIn, Apollo" },
+      { "name": "SDR/BDR", "kpi": "Zakwalifikowane spotkania", "tools": "Instantly, Clay" },
+      { "name": "Account Executive", "kpi": "Win-rate i tempo deali", "tools": "CRM, call recording" },
+      { "name": "Lead Gen", "kpi": "Zweryfikowane leady tygodniowo", "tools": "Apollo, Hunter" },
+      { "name": "Sales Coach", "kpi": "Jakość pracy z obiekcjami", "tools": "Call library, scorecards" },
+      { "name": "CRM Admin", "kpi": "Higiena pipeline", "tools": "HubSpot, Salesforce" },
+      { "name": "AI Automator", "kpi": "Godziny oszczędzone automatyzacją", "tools": "Make, n8n, GPT" },
+      { "name": "Data Researcher", "kpi": "Aktualność danych ICP", "tools": "BuiltWith, Sales Nav" }
+    ]
+  },
+  "forWhom": {
+    "title": "Zaprojektowane dla każdego etapu",
+    "items": [
+      {
+        "stage": "Pre-Revenue Startup",
+        "text": "Masz produkt i finansowanie. Potrzebujesz pierwszego systemu sprzedaży szybko.",
+        "package": "Pakiet First Sales"
+      },
+      {
+        "stage": "Early Stage (500K-3M ARR)",
+        "text": "Jest trakcja, ale sprzedaż jest chaotyczna. Potrzebujesz procesu, leadershipu i skali.",
+        "package": "Pakiet Scale"
+      },
+      {
+        "stage": "Growth Stage (3M+ ARR)",
+        "text": "Wchodzisz na nowy rynek lub vertical. Potrzebujesz dedykowanego outbound squad.",
+        "package": "Pakiet Expansion"
+      }
+    ]
+  },
+  "industries": {
+    "title": "Głębokie doświadczenie w trzech wertykalach",
+    "items": [
+      { "name": "IT SaaS", "text": "BizDev + cold outreach dla enterprise i mid-market." },
+      { "name": "Fintech", "text": "Compliance-aware zespoły BizDev dla płatności, lending i infra." },
+      { "name": "EdTech", "text": "Zespoły inbound-closing z fokus na LTV w modelach subskrypcyjnych." }
+    ]
+  },
+  "cases": {
+    "title": "Wyniki, które zbudowaliśmy",
+    "empty": "Case studies wkrótce — trwa zdejmowanie NDA."
+  },
+  "stack": {
+    "title": "Infrastruktura stojąca za zespołem",
+    "groups": [
+      { "name": "CRM", "tools": "HubSpot, Pipedrive, Salesforce, Bitrix24" },
+      { "name": "Outreach", "tools": "Instantly, Lemlist, Apollo, Clay" },
+      { "name": "Calling", "tools": "JustCall, Aircall, Ringover" },
+      { "name": "AI Layer", "tools": "OpenAI, Make, n8n, ElevenLabs" },
+      { "name": "Data", "tools": "Apollo, LinkedIn Sales Nav, Hunter, BuiltWith" },
+      { "name": "Analytics", "tools": "Looker Studio, Plausible, Mixpanel" }
+    ]
+  },
+  "mindset": {
+    "title": "Bo narzędzia i talent to za mało",
+    "sub": "Najczęstszy powód słabych wyników sprzedaży to mindset, nie metoda.",
+    "cards": [
+      { "name": "Warsztat grupowy", "text": "Zespół 5-30 osób. Usuwamy blokady lękowe." },
+      { "name": "Coaching 1-na-1", "text": "Dla RoS i founderów. Reset leadership mindset." },
+      { "name": "Program korporacyjny", "text": "Trzymiesięczna seria warsztatów i zmiana kultury." }
+    ],
+    "cta": "Przejdź do training"
+  },
+  "models": {
+    "title": "Współpracuj z nami po swojemu",
+    "items": [
+      { "name": "Permanent Placement", "text": "Znajdujemy Twojego VP Sales lub BizDev. Jednorazowy fee: % rocznej pensji." },
+      { "name": "Fractional / Rental", "text": "Specjalista pozostaje zatrudniony u nas. Współpraca od 3 miesięcy." },
+      { "name": "Full Team Outsource", "text": "Kompletny dział sprzedaży: zespół, stack i management po stronie Graal." }
+    ]
+  },
+  "faq": {
+    "title": "FAQ",
+    "answer": "Omawiamy to podczas discovery i uwzględniamy w propozycji.",
+    "questions": [
+      "Jak szybko możecie wystartować?",
+      "Co jeśli wyniki nie spełnią KPI?",
+      "Czy podpisujemy NDA?",
+      "Czy możecie pracować na naszym CRM?",
+      "Kto zarządza zespołem na co dzień?",
+      "Jaki jest minimalny okres współpracy?",
+      "Czy działacie na rynkach nieanglojęzycznych?",
+      "Czym Graal różni się od agencji staffingowej?"
+    ]
+  },
+  "quiz": {
+    "questions": [
+      "Na jakim etapie jest Twoja firma?",
+      "Czy masz działający CRM?",
+      "Ile leadów generujesz miesięcznie?",
+      "Czy masz zdefiniowane ICP i playbook sprzedażowy?",
+      "Jaka jest dziś największa blokada sprzedaży?"
+    ],
+    "options": [
+      ["Pre-revenue", "Early", "Growth"],
+      ["Brak CRM", "Podstawowy setup", "Zaawansowany CRM"],
+      ["<20", "20-100", "100+"],
+      ["Nie", "Częściowo", "Tak"],
+      ["Pipeline", "Closing", "Przywództwo zespołu"]
+    ],
+    "scoreLabel": "Twój Revenue Readiness Score:",
+    "recommendedLabel": "Rekomendowany model:",
+    "recommendations": {
+      "outbound": "Outbound",
+      "hybrid": "Hybrid",
+      "inbound": "Inbound"
+    }
+  },
+  "leadForm": {
+    "title": "Otwórz revenue tap",
+    "sub": "Powiedz nam o etapie i celu. Wyślemy propozycję zespołu w 48 godzin.",
+    "nameLabel": "Imię",
+    "companyLabel": "Firma",
+    "serviceLabel": "Czego potrzebujesz?",
+    "stageLabel": "Etap firmy",
+    "contactLabel": "Preferowany kontakt",
+    "submit": "Wyślij zgłoszenie",
+    "privacy": "NDA dostępne przed rozmową. Bez spamu.",
+    "success": "Zgłoszenie przyjęte. Skontaktujemy się w 48 godzin.",
+    "error": "Nie udało się wysłać. Spróbuj ponownie.",
+    "calendlyTitle": "Bezpłatna rozmowa Sales Audit",
+    "serviceOptions": [
+      { "value": "outbound", "label": "Outbound" },
+      { "value": "inbound", "label": "Inbound" },
+      { "value": "hybrid", "label": "Hybrid" },
+      { "value": "training", "label": "Training" },
+      { "value": "not-sure", "label": "Nie jestem pewien" }
+    ],
+    "stageOptions": [
+      { "value": "pre-revenue", "label": "Pre-revenue" },
+      { "value": "early", "label": "Early" },
+      { "value": "growth", "label": "Growth" }
+    ]
+  },
+  "pages": {
+    "outbound": {
+      "title": "Zespoły i rozwiązania Outbound",
+      "sub": "Systemy cold outreach dla IT SaaS, Fintech i EdTech.",
+      "bullets": [
+        "BizDev Representative do cold networkingu i outreachu na LinkedIn.",
+        "SDR/BDR do kwalifikacji leadów i umawiania spotkań.",
+        "RoS do zarządzania procesem, KPI i raportami tygodniowymi.",
+        "W pakiecie setup CRM, skrypty, bazy danych i operacje callingowe."
+      ]
+    },
+    "inbound": {
+      "title": "Zespoły i rozwiązania Inbound",
+      "sub": "Domykanie ciepłych leadów, playbooki i wzrost LTV.",
+      "bullets": [
+        "RoS do prowadzenia zespołu domykającego incoming leady.",
+        "Account Executive do wzrostu konwersji i szybkości domykania.",
+        "Sales Coach do skryptów, obiekcji i upsellu.",
+        "W pakiecie reaktywacja bazy i playbook oparty o LTV."
+      ]
+    },
+    "hybrid": {
+      "title": "Zespoły i rozwiązania Hybrid",
+      "sub": "Jeden zintegrowany funnel od outbound pipeline do zamkniętego revenue.",
+      "bullets": [
+        "Fractional RoS dla zarządzania całym lejkiem.",
+        "Zespół outbound (BDR/SDR) do budowy pipeline.",
+        "Closerzy inbound (AE) do konwersji ciepłego popytu.",
+        "Warstwa automatyzacji AI (Make, n8n, enrichment GPT)."
+      ]
+    },
+    "training": {
+      "title": "Sales Mindset i Corporate Training",
+      "sub": "Pracujemy z psychologią stojącą za wynikami: lęk, pewność, przywództwo i growth mindset.",
+      "cards": [
+        {
+          "title": "Warsztat grupowy",
+          "text": "Jednodniowy format dla zespołów sprzedaży (5-30 osób)."
+        },
+        {
+          "title": "Coaching 1-na-1",
+          "text": "4-8 sesji dla foundera, RoS lub lidera sprzedaży."
+        },
+        {
+          "title": "Program korporacyjny",
+          "text": "Seria 1-3 miesiące skupiona na leadershipie i zmianie kultury."
+        }
+      ]
+    },
+    "careers": {
+      "title": "Dołącz do sieci Graal",
+      "sub": "Pracuj z najlepszymi produktami. Ustalaj własne warunki. My Cię wdrażamy — Ty domykasz deale.",
+      "roles": [
+        "Fractional RoS z 5+ lat doświadczenia.",
+        "BizDev reps z doświadczeniem SaaS / Fintech.",
+        "SDR/BDR z udokumentowanym outbound track record.",
+        "Sales coachowie i trenerzy."
+      ],
+      "form": {
+        "name": "Imię",
+        "role": "Rola",
+        "linkedin": "LinkedIn",
+        "pitch": "Krótki pitch o sobie",
+        "submit": "Wyślij profil"
+      }
+    },
+    "quiz": {
+      "title": "Revenue Readiness Quiz",
+      "sub": "Odpowiedz na pięć pytań i otrzymaj score z rekomendacją modelu."
+    },
+    "cases": {
+      "title": "Wszystkie case studies",
+      "sub": "Case studies są w procesie zdejmowania NDA. Struktura jest gotowa.",
+      "columns": ["Nisza", "Wyzwanie", "Zespół", "Wynik"],
+      "empty": "Case studies wkrótce — trwa zdejmowanie NDA."
+    },
+    "blog": {
+      "title": "Blog",
+      "sub": "Insights o pipeline, ARR i operacjach sprzedażowych."
+    }
+  },
+  "footer": {
+    "tagline": "We open the revenue tap",
+    "copy": "Graal. Revenue machine dla SaaS, Fintech i EdTech."
+  }
+}

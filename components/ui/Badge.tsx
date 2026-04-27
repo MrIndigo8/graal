@@ -1,34 +1,15 @@
-import { cn } from "@/lib/cn";
+import { cn } from "@/lib/utils";
 
-type BadgeVariant = "crimson" | "gold" | "neutral";
+type BadgeProps = React.HTMLAttributes<HTMLSpanElement>;
 
-const variantClasses: Record<BadgeVariant, string> = {
-  crimson:
-    "bg-[linear-gradient(135deg,var(--color-crimson-50),#fff)] text-[var(--color-crimson-900)] border border-[rgba(181,58,47,0.22)]",
-  gold:
-    "bg-[linear-gradient(135deg,var(--color-gold-100),#fff)] text-[var(--color-gold-700)] border border-[rgba(184,147,67,0.32)]",
-  neutral:
-    "bg-[linear-gradient(135deg,var(--color-bg-secondary),#fff)] text-[var(--color-text-secondary)] border border-[var(--color-border)]",
-};
-
-export function Badge({
-  variant = "crimson",
-  className,
-  children,
-}: {
-  variant?: BadgeVariant;
-  className?: string;
-  children: React.ReactNode;
-}) {
+export function Badge({ className, ...props }: BadgeProps) {
   return (
     <span
       className={cn(
-        "inline-flex w-fit items-center rounded-full px-3 py-1 text-xs font-semibold uppercase tracking-[0.14em]",
-        variantClasses[variant],
+        "inline-flex items-center rounded-none border border-[var(--border)] bg-[var(--crimson-light)] px-3 py-1 text-[11px] font-medium uppercase tracking-[0.06em] text-[var(--crimson-dark)]",
         className,
       )}
-    >
-      {children}
-    </span>
+      {...props}
+    />
   );
 }
