@@ -1,18 +1,6 @@
 import type { Metadata } from "next";
-import { Cormorant_Garamond, Inter } from "next/font/google";
 import { AnalyticsScripts } from "@/components/layout/analytics-scripts";
 import "./globals.css";
-
-const inter = Inter({
-  subsets: ["latin", "cyrillic"],
-  variable: "--font-inter",
-});
-
-const cormorant = Cormorant_Garamond({
-  subsets: ["latin", "cyrillic"],
-  variable: "--font-cormorant",
-  weight: ["400", "500"],
-});
 
 export const metadata: Metadata = {
   title: {
@@ -31,7 +19,7 @@ export default function RootLayout({
 }>) {
   return (
     <html suppressHydrationWarning>
-      <body className={`${inter.variable} ${cormorant.variable} font-sans antialiased`}>
+      <body className="font-sans antialiased">
         {children}
         <AnalyticsScripts />
       </body>

@@ -3,6 +3,9 @@
 @tailwind utilities;
 
 :root {
+  --font-inter: "Inter", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  --font-cormorant: "Cormorant Garamond", "Times New Roman", Georgia, serif;
+
   --bg-primary: #fafaf8;
   --bg-secondary: #f4f2ed;
   --bg-card: #ffffff;
